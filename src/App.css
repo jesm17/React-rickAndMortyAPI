@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  font-family: "Archivo Black", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#main {
+  background-color: rgb(39, 43, 51);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#card-full {
+  max-width: 570px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-body {
+  background-color: rgb(60, 62, 68);
 }
 
-@keyframes App-logo-spin {
-  from {
+i {
+  font-size: 10px;
+}
+
+.text-secondary {
+  color: #c5c8d1 !important;
+}
+
+.text-primary {
+  color: #2cb67d;
+}
+
+.bg-list {
+  background-color: #ffffff00;
+}
+
+#imgSection {
+  position: relative;
+}
+
+.image-section {
+  position: relative; /* Establece la posición relativa para la sección */
+}
+
+.image {
+  display: block; /* Establece la imagen como un elemento de bloque */
+  width: 100%; /* Asegura que la imagen se ajuste al ancho de su contenedor */
+  height: auto; /* Ajusta la altura de la imagen proporcionalmente */
+}
+
+.text-overlay {
+  position: absolute; /* Establece la posición absoluta para la superposición de texto */
+  top: 50%; /* Alinea el borde superior de la superposición de texto con el centro de la sección */
+  left: 50%; /* Alinea el borde izquierdo de la superposición de texto con el centro de la sección */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centra la superposición de texto en la sección */
+  text-align: center; /* Centra el texto horizontalmente */
+  color: white; /* Establece el color del texto en blanco */
+}
+
+#text-main {
+  font-size: 60px;
+  color: rgb(255, 152, 0);
+}
+
+#footer {
+  color: white;
+}
+#api {
+  text-decoration: none;
+  color: rgb(255, 152, 0);
+}
+#api:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(60, 62, 68);
+}
+.bi-linkedin:hover {
+  color: rgb(255, 152, 0);
+}
+.bi-github:hover {
+  color: rgb(255, 152, 0);
+}
+
+@keyframes rotate {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+#react-img {
+  animation-name: rotate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#react-img:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+::selection {
+  background-color: rgb(32, 35, 41);
+  color: rgb(255, 152, 0);
 }

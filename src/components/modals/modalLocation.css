@@ -1,0 +1,29 @@
+.origenUnknown {
+  color: #e45858;
+}
+
+.dataModal {
+  color: #e4e4e4;
+}
+
+.dataModal:hover {
+  color: #c9c9c9;
+  text-decoration: underline;
+  text-decoration-color: #faae2b;
+}
+
+#ModalLocationTitle {
+  color: white;
+}
+.modal-bg {
+  background-color: rgb(60, 62, 68) !important;
+}
+#closeButton:hover{
+  background-color: #e4e4e4;
+}
+#closeButtonIcon{
+  color: white;
+}
+#closeButtonIcon:hover{
+    color: black;
+}

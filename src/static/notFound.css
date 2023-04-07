@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  font-family: "Archivo Black", sans-serif;
+}
+
+#number {
+  font-size: 250px;
+  color: white;
+}
+#not-found {
+  font-size: 150px;
+  color: white;
+}
+#ramdonPhrase {
+  color: white;
+}
+#link-to-main-page{
+  color: white;
+  text-decoration: none;
+}
+#link-to-main-page:hover{
+  color:  rgb(255, 152, 0);
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+@media (max-width: 426px) {
+  #number {
+    font-size: 100px;
+  }
+  #not-found {
+    font-size: 100px;
+  }
+}
+@media (max-width: 321px) {
+  #number {
+    font-size: 70px;
+  }
+  #not-found {
+    font-size: 70px;
+  }
+}
