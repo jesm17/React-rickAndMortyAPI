@@ -117,6 +117,7 @@ function NavPage({ page, setPage, totalPages }) {
 }
 
 function Characters() {
+  document.title= "Rick and Morty API";
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState([]);
   const [page, setPage] = useState(1);
