@@ -14,7 +14,7 @@
 }
 
 .card-body {
-  background-color: rgb(60, 62, 68);
+  background: rgba(60, 62, 68, 1);
 }
 
 i {
@@ -24,7 +24,29 @@ i {
 .text-secondary {
   color: #c5c8d1 !important;
 }
+@keyframes ledCharacters {
+  0% {
+    filter: drop-shadow(0 0 2px #ffffffaa);
+  }
+  75% {
+    filter: drop-shadow(0 0 8px #ffffffaa);
+  }
+  100% {
+    filter: drop-shadow(0 0 1px #ffffffaa 0.2);
+  }
+}
 
+#characterImg {
+  animation-name: ledCharacters;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+#characterImg:hover {
+  animation: none;
+  filter: drop-shadow(0 0 9px #49f71e);
+}
 .text-primary {
   color: #2cb67d;
 }
@@ -61,7 +83,7 @@ i {
 
 #text-main {
   font-size: 60px;
-  color: rgb(255, 152, 0);
+  color: rgb(232, 232, 232);
 }
 
 #footer {
@@ -85,8 +107,20 @@ i {
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
+    filter: drop-shadow(0 0 20px #17f025);
+  }
+  25% {
+    filter: drop-shadow(0 0 10px #17f025);
+  }
+  50% {
+    transform: rotate(180deg);
+    filter: drop-shadow(0 0 20px #17f025);
+  }
+  75% {
+    filter: drop-shadow(0 0 40px #17f025);
   }
   100% {
+    filter: drop-shadow(0 0 20px #17f025);
     transform: rotate(360deg);
   }
 }
@@ -95,11 +129,26 @@ i {
   animation-duration: 7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  /* animation-fill-mode: forwards; */
 }
-#react-img:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 ::selection {
   background-color: rgb(32, 35, 41);
   color: rgb(255, 152, 0);
+}
+.head {
+  background-color: rgb(32, 35, 41);
+  /* background-size: auto; */
+  /* background-position: center; */
+  /* backgrkound-repeat: no-repeat; */
+}
+
+.portal {
+  /* background-image: url("./assets/img/portal.png"); */
+  animation-name: rotate;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  /* position: relative; */
 }

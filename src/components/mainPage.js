@@ -117,7 +117,7 @@ function NavPage({ page, setPage, totalPages }) {
 }
 
 function Characters() {
-  document.title= "Rick and Morty API";
+  document.title = "Rick and Morty API";
   const [characters, setCharacters] = useState([]);
   const [info, setInfo] = useState([]);
   const [page, setPage] = useState(1);
@@ -137,8 +137,8 @@ function Characters() {
         <div className="row row-cols-2 w-100 d-flex align-items-start ps-2">
           {characters.map((character) => (
             <div className="col mt-4 mb-2 w-50 " key={character.id}>
-              <div className="card mb-3 h-100 " id="card-full">
-                <div className="row g-0 h-100">
+              <div className="card mb-3 h-100  " id="card-full">
+                <div className="row g-0 h-100 ">
                   <div className="col-md-4">
                     <img
                       draggable="false"
@@ -226,7 +226,7 @@ function Gender({ gender }) {
         Gender: <span style={{ color: `${famaleColor}` }}>{gender}</span>{" "}
         <span>
           <i
-            className="bi bi-gender-male"
+            className="bi bi-gender-female"
             style={{ color: `${famaleColor}`, fontSize: "15px" }}
           ></i>
         </span>{" "}
@@ -310,7 +310,7 @@ function MainPage() {
     <div>
       <Headers></Headers>
       <Head></Head>
-      <Characters></Characters>
+      <Characters />
       <footer>
         <Footer></Footer>
       </footer>
